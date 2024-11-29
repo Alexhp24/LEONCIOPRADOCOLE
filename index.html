@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LEONCIO||PRADO</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- ICONS XDDD -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="vistas/css/style.css" />
+  </head>
+
+  <body>
+    <!-- NAVAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Logo en lugar de texto -->
+        <a class="navbar-brand" href="#">
+          <img src="vistas/img/logos.png" alt="Logo" style="height: 60px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <!-- Centrado de los elementos de la lista -->
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll mx-auto"
+            style="--bs-scroll-height: 200px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Historia
+              </a>
+              <ul class="dropdown-menu custom-dropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Leoncio Prado Gutierrez</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Gran Unidad Escolar LP</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Niveles
+              </a>
+              <ul class="dropdown-menu custom-dropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="directorio.html">Directorio</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <a href="">
+              <button
+                class="btn btn-outline-success-hmn"
+                type="submit"
+                style="
+                  width: 150px;
+                  border-width: 3px;
+                  transition: background-color 0.3s, color 0.3s,
+                    border-color 0.3s;
+                "
+              >
+                Nuestro Himno
+              </button>
+            </a>
+            <a href="">
+              <button
+                class="btn btn-outline-success"
+                type="submit"
+                style="
+                  width: 150px;
+                  border-width: 3px;
+                  transition: background-color 0.3s, color 0.3s,
+                    border-color 0.3s;
+                "
+              >
+                Contacto
+              </button>
+            </a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img
+            src="vistas/img/img_carrusel/carrusel01.png"
+            class="d-block"
+            style="width: 100%; height: 550px; object-fit: cover"
+            alt="Imagen 1"
+          />
+          <div
+            class="carousel-caption d-none d-md-block"
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: black;
+              padding: 10px;
+            "
+          >
+            <h5>Texto Encima del Carrusel</h5>
+            <p>Descripción o mensaje adicional.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="vistas/img/img_carrusel/carrusel02.png"
+            class="d-block"
+            style="width: 100%; height: 550px; object-fit: cover"
+            alt="Imagen 2"
+          />
+          <div
+            class="carousel-caption d-none d-md-block"
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: black;
+              padding: 10px;
+            "
+          >
+            <h5>Texto Encima del Carrusel</h5>
+            <p>Descripción o mensaje adicional.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="vistas/img/img_carrusel/carrusel03.png"
+            class="d-block"
+            style="width: 100%; height: 550px; object-fit: cover"
+            alt="Imagen 3"
+          />
+          <div
+            class="carousel-caption d-none d-md-block"
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: rgb(245, 242, 242);
+              padding: 10px;
+            "
+          >
+            <h5>Texto Encima del Carrusel</h5>
+            <p>Descripción o mensaje adicional.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- CARDS -->
+    <div class="bienvenidos">
+      <h1>Nuestros Valores</h1>
+    </div>
+    <div class="container card-container">
+      <div class="row justify-content-center g-3">
+        <!-- Card 1 -->
+        <div class="col-auto">
+          <a href="https://reactjs.org" class="text-decoration-none">
+            <div
+              class="card shadow"
+              style="background-color: white; border: none"
+            >
+              <img
+                src="vistas/img/img_valores/mission.png"
+                class="card-img-top"
+                alt="React Logo"
+              />
+              <div class="card-body">
+                <h5 class="card-title">MISÍON</h5>
+                <p class="card-text">
+                  Somos una Institución Educativa integrada, protectora y
+                  segura, promovemos y potenciamos el desarrollo de capacidades
+                  y habilidades para la formación de semilleros, con recursos
+                  humanos idóneos, infraestructura y condiciones logísticas
+                  adecuadas; fomentamos la participación activa y la práctica de
+                  valores y actitudes, en un clima de convivencia escolar
+                  positiva y con un alto espíritu de servicio desde la infancia
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-auto">
+          <a href="https://angular.io" class="text-decoration-none">
+            <div
+              class="card shadow"
+              style="background-color: white; border: none"
+            >
+              <img
+                src="vistas/img/img_valores/vision.png"
+                class="card-img-top"
+                alt="Angular Logo"
+              />
+              <div class="card-body">
+                <h5 class="card-title">VISIÓN</h5>
+                <p class="card-text">
+                  Ser una Institución Educativa moderna, emprendedora, inclusiva
+                  e innovadora, líder en la formación integral, el desarrollo de
+                  competencias y la práctica de principios democráticos,
+                  sociales, culturales, ecológicos y éticos, capaces de aportar
+                  al desarrollo sostenible y sustentable con enfoque territorial
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-auto">
+          <a href="https://vuejs.org" class="text-decoration-none">
+            <div
+              class="card shadow"
+              style="background-color: white; border: none"
+            >
+              <img
+                src="vistas/img/img_valores/valores.png"
+                class="card-img-top"
+                alt="Vue Logo"
+              />
+              <div class="card-body">
+                <h5 class="card-title">VALORES</h5>
+                <p class="card-text">
+                  <i class="fa-solid fa-caret-right"></i> RESPETO
+                </p>
+                <p class="card-text">
+                  <i class="fa-solid fa-caret-right"></i> JUSTICIA
+                </p>
+                <p class="card-text">
+                  <i class="fa-solid fa-caret-right"></i> SOLIDARIDAD
+                </p>
+                <p class="card-text">
+                  <i class="fa-solid fa-caret-right"></i> RESPONSABILIDAD
+                </p>
+                <p class="card-text">
+                  <i class="fa-solid fa-caret-right"></i> EMPATÍA
+                </p>
+                <p class="card-text">
+                  <i class="fa-solid fa-caret-right"></i> TOLERANCIA
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARDS NIVELES -->
+    <div class="bienvenidos">
+      <h1>Educacion Basica</h1>
+      <p>REGULAR</p>
+    </div>
+    <div class="container mt-5 d-flex justify-content-center">
+      <div class="custom-container">
+        <!-- Primera tarjeta con color rojo -->
+        <a href="https://example.com/one" target="_blank" class="custom-card">
+          <img
+            src="vistas/img/Inicial1.png"
+            class="custom-card-img"
+            alt="Imagen de ejemplo"
+          />
+          <div class="custom-card-overlay overlay-red">
+            <div class="custom-title-wrapper">
+              <h5 class="custom-title text-white">INICIAL</h5>
+              <i class="fa-solid fa-circle-plus" style="color: #0543ad"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Segunda tarjeta con color azul -->
+        <a href="https://example.com/two" target="_blank" class="custom-card">
+          <img
+            src="vistas/img/Primaria.png"
+            class="custom-card-img"
+            alt="Imagen de ejemplo"
+          />
+          <div class="custom-card-overlay overlay-blue">
+            <div class="custom-title-wrapper">
+              <h5 class="custom-title text-white">PRIMARIA</h5>
+              <i class="fa-solid fa-circle-plus" style="color: #0543ad"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Tercera tarjeta con color verde -->
+        <a href="https://example.com/three" target="_blank" class="custom-card">
+          <img
+            src="vistas/img/Secundaria.png"
+            class="custom-card-img"
+            alt="Imagen de ejemplo"
+          />
+          <div class="custom-card-overlay overlay-green">
+            <div class="custom-title-wrapper">
+              <h5 class="custom-title text-white">SECUNDARIA</h5>
+              <i class="fa-solid fa-circle-plus" style="color: #0543ad"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="bienvenidos">
+      <h1>Nuestras Noticias</h1>
+    </div>
+
+    <!-- NUESRAS NOTICIAS -->
+    <div class="container my-56">
+      <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-md-4 mb-4">
+                <div class="card-noticias">
+                  <img
+                    src="vistas/img/img_noticias/noticias01.png"
+                    class="card-img-top"
+                    alt="Imagen 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Institución Líder del Bicentenario 2021
+                    </h5>
+                    <p class="card-text">
+                      El 30 de abril el congreso de la República del Perú otorga
+                      el reconocimiento a la GUE Leoncio Prado como Colegio
+                      Líder del Bicentenario.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card-noticias">
+                  <img
+                    src="vistas/img/img_noticias/noticias02.png"
+                    class="card-img-top"
+                    alt="Imagen 2"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Juntos por un retorno Seguro y Feliz 2022
+                    </h5>
+                    <p class="card-text">
+                      Iniciamos nuestra inicio del Año Escolar 2022 con un
+                      retorno Seguro y Feliz.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card-noticias">
+                  <img
+                    src="vistas/img/img_noticias/noticias03.png"
+                    class="card-img-top"
+                    alt="Imagen 3"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Feliz día de la Mujer<br />2022</h5>
+                    <p class="card-text">
+                      El 08 de marzo las maestras pudieron celebrar su día en
+                      acompañamiento de los mariachis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- GRUPO 3 XD  -->
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-4 mb-4">
+                <div class="card-noticias">
+                  <img
+                    src="vistas/img/img_noticias/noticias04.png"
+                    class="card-img-top"
+                    alt="Imagen 4"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Institución Líder del Bicentenario 2021
+                    </h5>
+                    <p class="card-text">
+                      El 30 de abril el congreso de la República del Perú otorga
+                      el reconocimiento a la GUE Leoncio Prado como Colegio
+                      Líder del Bicentenario.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card-noticias">
+                  <img
+                    src="vistas/img/img_noticias/noticias05.png"
+                    class="card-img-top"
+                    alt="Imagen 5"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Juntos por un retorno Seguro y Feliz 2022
+                    </h5>
+                    <p class="card-text">
+                      El 30 de abril el congreso de la República del Perú otorga
+                      el reconocimiento a la GUE Leoncio Prado como Colegio
+                      Líder del Bicentenario.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card-noticias">
+                  <img
+                    src="vistas/img/img_noticias/noticias06.png"
+                    class="card-img-top"
+                    alt="Imagen 6"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Feliz día de la Mujer<br />2022Título 6
+                    </h5>
+                    <p class="card-text">
+                      El 30 de abril el congreso de la República del Perú otorga
+                      el reconocimiento a la GUE Leoncio Prado como Colegio
+                      Líder del Bicentenario.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#cardCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#cardCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- SINTA CARRUSEL -->
+    <div class="logo-carousel-new">
+      <a href="">
+        <img src="vistas/img/sinta_logos/aprendocs.png" alt="Logo 1" />
+      </a>
+      <a href="">
+        <img
+          src="vistas/img/sinta_logos/coar.png"
+          alt="Logo 2"
+          style="width: 105px"
+        />
+      </a>
+      <a href="">
+        <img
+          src="vistas/img/sinta_logos/dre.png"
+          alt="Logo 3"
+          style="width: 110px"
+        />
+      </a>
+      <a href="">
+        <img src="vistas/img/sinta_logos/scale.png" alt="Logo 4" />
+      </a>
+      <a href="">
+        <img src="vistas/img/sinta_logos/fondep.png" alt="Logo 5" />
+      </a>
+      <a href="">
+        <img src="vistas/img/sinta_logos/minedu.png" alt="Logo 6" />
+      </a>
+      <a href="">
+        <img
+          src="vistas/img/sinta_logos/pronabec.png"
+          alt="Logo 7"
+          style="width: 115px"
+        />
+      </a>
+      <a href="">
+        <img src="vistas/img/sinta_logos/renienc.png" alt="Logo 8" />
+      </a>
+      <a href="">
+        <img src="vistas/img/sinta_logos/sunedo.png" alt="Logo 9" />
+      </a>
+      <a href="">
+        <img
+          src="vistas/img/sinta_logos/ugelhc.png"
+          alt="Logo 10"
+          style="width: 95px"
+        />
+      </a>
+    </div>
+
+    <!-- FOTERS -->
+    <footer class="footer bg-danger">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-sm-6 col-md-4 mt-4 col-lg-3 text-center text-sm-start"
+          >
+            <div class="information">
+              <h6 class="footer-heading text-uppercase text-white fw-bold">
+                INFORMACION
+              </h6>
+              <ul class="list-unstyled footer-link mt-4">
+                <li class="mb-1">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none fw-semibold"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none fw-semibold"
+                    >Directorio</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none fw-semibold"
+                    >Niveles</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none fw-semibold"
+                    >Servicio</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 mt-4 col-lg-3 text-center text-sm-start"
+          >
+            <div class="resources">
+              <h6 class="footer-heading text-uppercase text-white fw-bold">
+                NOSOTROS
+              </h6>
+              <ul class="list-unstyled footer-link mt-4">
+                <li class="mb-1">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none fw-semibold"
+                    >Link</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none fw-semibold"
+                    >Historia</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none fw-semibold"
+                    >Leoncio Prado</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none fw-semibold"
+                    >Gran Unidad Escolar</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 mt-4 col-lg-2 text-center text-sm-start"
+          >
+            <div class="social">
+              <h6 class="footer-heading text-uppercase text-white fw-bold">
+                REDES SOCIALES
+              </h6>
+              <ul class="list-inline my-4">
+                <li class="list-inline-item">
+                  <a href="#" class="text-white btn-sm btn btn-primary mb-2"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-danger btn-sm btn btn-light mb-2"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white btn-sm btn btn-primary mb-2"
+                    ><i class="bi bi-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white btn-sm btn btn-success mb-2"
+                    ><i class="bi bi-whatsapp"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white btn-sm btn btn-success mb-2"
+                    ><i class="bi bi-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-6 mt-4 col-lg-4 text-center text-sm-start"
+          >
+            <div class="contact">
+              <h6 class="footer-heading text-uppercase text-white fw-bold">
+                CONTACTOS
+              </h6>
+              <a
+                href=""
+                class="text-white mb-1 text-decoration-none d-block fw-semibold"
+              >
+                <i class="bi bi-pin-map fw-semibold"></i> Plaza armas , Jr
+                huanuco , 160055
+              </a>
+              <a
+                href="#"
+                class="text-white mb-1 text-decoration-none d-block fw-semibold"
+                ><i class="bi bi-telephone"></i> 987456321
+              </a>
+              <a
+                href="#"
+                class="text-white mb-1 text-decoration-none d-block fw-semibold"
+                ><i class="bi bi-envelope"></i> leoncioprado@gmail.com</a
+              >
+              <a href="" class="text-white text-decoration-none fw-semibold"
+                ><i class="bi bi-skype"></i> Leonciopradino</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center bg-dark text-white mt-4 p-1">
+        <p class="mb-0 fw-bold">
+          "Donde Existe un Huanuqueño, late un Corazon Leonciopradino"
+        </p>
+      </div>
+    </footer>
+
+    <script src="vistas/js/script.js"></script>
+
+    <!-- ICONS XD -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

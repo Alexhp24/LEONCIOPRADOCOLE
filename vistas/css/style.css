@@ -1,0 +1,408 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f3f5;
+}
+
+/* Estilo general de la barra */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fafafa;
+  position: fixed;
+  color: #2ae0c5;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Color inicial de los enlaces */
+.navbar-nav .nav-link.active {
+  color: #004071;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link.active:hover,
+.navbar-nav .nav-link.active:focus {
+  color: #247c97;
+}
+
+/* Dropdown */
+.navbar-nav .nav-item.dropdown:hover .nav-link {
+  color: #247c97;
+}
+
+.navbar-nav .custom-dropdown {
+  background-color: #fafafa;
+  border: 1px solid #fafafa;
+  border-radius: 5px;
+}
+
+.navbar-nav .custom-dropdown .dropdown-item {
+  color: #004071;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav .custom-dropdown .dropdown-item:hover {
+  background-color: #247c97;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Fondo visible en móvil */
+.navbar-collapse {
+  background-color: #fafafa;
+  border-radius: 0 0 8px 8px !important;
+  
+}
+
+.navbar-toggler {
+  border-color: #004071;
+}
+
+
+.navbar-toggler.collapsed + .navbar-collapse {
+  background-color: #fafafa;
+  color: #004071;
+}
+
+.navbar-collapse .nav-link {
+  color: #004071;
+}
+
+.navbar-collapse .nav-link:hover {
+  color: #247c97;
+}
+
+/* Boton contacto */
+.btn-outline-success {
+  border-radius: 43px;
+  border-color: #f56600;
+  color: #f56600;
+  margin-left: 10px;
+}
+
+.btn-outline-success:hover {
+  background-color: #004071;
+  color: white;
+  border-color: transparent;
+  font-weight: bold;
+}
+
+/* fin */
+
+/* Boton himno */
+.btn-outline-success-hmn {
+  background-color: #f56600;
+  border-radius: 43px;
+  color: #ffffff;
+  /* Texto anaranjado */
+  font-weight: bold;
+}
+
+.btn-outline-success-hmn:hover {
+  background-color: #004071;
+  color: white;
+  border-color: transparent;
+  font-weight: bold;
+}
+/* fin */
+
+/* Bienvenidos */
+.bienvenidos {
+  
+  text-align: center;
+  /* Centra el contenido dentro del div */
+}
+
+.bienvenidos h1 {
+  font-size: 45px;
+  margin-top: 25px;
+  font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif;
+  color: #004071;
+  /* Cambia el color del h1 */
+  font-weight: bold;
+  /* Aplica negrita al h1 */
+}
+
+.bienvenidos p {
+  font: condensed 120% sans-serif;
+  color: #004071;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* CARD Valores  */
+.card {
+  width: 300px;
+  height: 400px;
+}
+
+.card img {
+  height: 100px;
+  object-fit: contain;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.1s ease;
+}
+
+.card-title {
+  color: #004071;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  /* Reduce el tamaño del título */
+}
+
+.card-text {
+  color: #004071;
+  text-align: justify;
+  font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif;
+  font-size: 0.85rem;
+  /* Reduce el tamaño del texto */
+}
+
+/* fin */
+
+/* CARD NIVELES */
+.custom-card {
+  margin: 8px;
+  position: relative;
+  border-radius: 15px;
+  width: 320px;
+  height: 450px;
+  overflow: hidden;
+  /* Evita que los elementos desborden el contenedor */
+  text-decoration: none;
+  color: inherit;
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+  /* Efecto de zoom al pasar el mouse */
+  transition: transform 0.3s ease;
+}
+
+.custom-card-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.custom-card-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-title-wrapper {
+  display: flex;
+  align-items: center;
+  /* Alinea el ícono y el texto verticalmente */
+  gap: 10px;
+  /* Espaciado entre el ícono y el texto */
+}
+
+.custom-title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.custom-container {
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Colores para cada tarjeta */
+.overlay-red {
+  background-color: rgba(238, 21, 21, 0.8);
+}
+
+.overlay-blue {
+  background-color: rgba(0, 0, 255, 0.8);
+}
+
+.overlay-green {
+  background-color: rgba(245, 116, 11, 0.8);
+}
+
+@media (max-width: 768px) {
+  .custom-card {
+    width: 200px;
+    height: 225px;
+  }
+
+  .custom-container {
+    gap: 15px;
+  }
+}
+/* FIN CADS DE NIVELES */
+
+/* NUESTRAS NOTICIAS  */
+.card-noticias {
+
+  border-radius: 8px;        /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  width: 100%;               
+  height: 350px;   
+}
+
+.card-img-top {
+  width: 100%;              
+  height: 50%;               
+  object-fit: cover;         
+  border-radius: 8px 8px 0 0;      
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  color: #555;
+  margin: 5px;
+}
+
+
+/* sinta de logos  */
+.logo-carousel-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  overflow-x: auto;
+  padding: 10px 0;
+  background-color: #ffffff;
+  white-space: nowrap; /* Evita que los logos se envuelvan en nuevas líneas */
+}
+
+.logo-carousel-new img {
+  height: 32px; /* Ajusta el tamaño de los logos */
+  object-fit: contain;
+  transition: transform 0.3s; /* Suaviza la transición al hacer hover */
+}
+
+.logo-carousel-new img:hover {
+  transform: scale(1.1); /* Efecto al pasar el ratón sobre los logos */
+}
+/* fin */
+
+
+/* FOOTER */
+.footer {
+  background-color: #0c5085 !important;
+  color: #fff !important;
+  padding-top: 40px !important;
+  padding-bottom: 20px !important;
+}
+
+.footer-heading {
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 15px !important;
+}
+
+.footer-link a {
+  font-size: 0.9rem !important;
+  color: #fff !important;
+  transition: all 0.3s ease !important;
+}
+
+.footer-link a:hover {
+  color: #f56600 !important;
+  /* Cambia el color al pasar el cursor sobre los enlaces */
+  text-decoration: underline !important;
+}
+
+.social .list-inline-item {
+  margin: 0 10px;
+}
+
+.social .btn {
+  background-color: #004071 !important;
+  border: 2px solid #fff !important;
+  border-radius: 50% !important;
+  width: 35px !important;
+  height: 35px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.social .btn:hover {
+  background-color: #347cb3 !important;
+}
+.social .btn i {
+  font-size: 1.2rem !important;
+  color: #fff !important;
+}
+.social .btn-light {
+  border-color: #fff !important;
+}
+.contact address,
+.contact a {
+  font-size: 0.9rem !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+}
+.contact address i,
+.contact a i {
+  margin-right: 8px !important;
+}
+
+.contact a:hover {
+  color: #f56600 !important;
+}
+
+.bg-dark {
+  background-color: #004071 !important;
+  /* Fondo oscuro para la sección inferior */
+}
+
+.bg-dark p {
+  font-size: 0.9rem !important;
+  margin: 0 !important;
+  font-weight: normal !important;
+}
+
+/* Respuestas a pantallas pequeñas */
+@media (max-width: 576px) {
+  .footer .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .footer-heading {
+    font-size: 1rem !important;
+  }
+
+  .footer-link a {
+    font-size: 0.8rem !important;
+  }
+
+  .social .btn {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+/* FIN  */
+
