@@ -406,3 +406,218 @@ body {
 
 /* FIN  */
 
+/* TARJETA DOCENTES O DIRECTORIO */
+.docente-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.docente-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.docente-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.docente-image-wrapper {
+  height: 100px;
+  background-color: #3659b9fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.docente-image-circle {
+  width: 100px;
+  height: 100px;
+  background-color:#fff;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #2e65dbdc;
+  position: absolute;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.docente-icon-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.docente-icon {
+  color: #e0d4d44b;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.docente-icon:hover {
+  color: #ffffffab;
+}
+
+.docente-card:hover {
+  transform: scale(1.05);
+}
+
+.docente-title {
+  margin: 15px 0;
+  font-size: 1.0rem;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+.docente-description {
+  margin: 0 0 15px;
+  padding: 0 15px;
+  color: #666;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+.docente-info {
+  margin: 5px;
+  padding: 0 15px;
+  color: #666;
+  font-style: italic;
+}
+
+.docente-rating {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.docente-star {
+  color: #FFD700;
+  font-size: 1.9rem;
+}
+
+.docente-boton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 0 15px 15px;
+  transition: background-color 0.3s;
+}
+
+.docente-boton:hover {
+  background-color: #0056b3;
+}
+
+.docente-section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff5722;
+  text-align: center;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+  animation: docente-bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes docente-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.docente-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 24px;
+  width: 85%;
+}
+
+/* Media Queries para Responsividad en Móviles */
+@media screen and (max-width: 768px) {
+  .docente-container {
+    gap: 10px;
+  }
+
+  .docente-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .docente-card {
+    width: 100%;
+  }
+
+  .docente-section-title {
+    font-size: 22px;
+  }
+
+  .docente-title {
+    font-size: 1.2rem;
+  }
+
+  .docente-description {
+    font-size: 0.9rem;
+  }
+
+  .docente-rating .docente-star {
+    font-size: 1.5rem;
+  }
+
+  .docente-center {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .docente-image-wrapper {
+    height: 80px;
+  }
+
+  .docente-image-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .docente-icon-group {
+    right: 5px;
+    top: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .docente-card {
+    width: 90%;
+  }
+
+  .docente-title {
+    font-size: 1rem;
+  }
+
+  .docente-description {
+    font-size: 0.85rem;
+  }
+
+  .docente-rating .docente-star {
+    font-size: 1.3rem;
+  }
+
+  .docente-section-title {
+    font-size: 20px;
+  }
+}
