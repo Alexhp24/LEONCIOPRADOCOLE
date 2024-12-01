@@ -138,95 +138,45 @@
 
     <!-- Carrusel -->
     <div
-      id="carouselExampleInterval"
-      class="carousel slide"
+      id="carouselContacto"
+      class="carousel slide position-relative"
       data-bs-ride="carousel"
     >
+      <!-- Título único centrado -->
+      <div class="carousel-title-wrapper">
+        <h5 class="carousel-title">DIRECTORIO</h5>
+        <p class="carousel-description">Contáctanos para más información</p>
+      </div>
+
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="500">
-          <img
-            src="vistas/img/img_carrusel/carrusel01.png"
-            class="d-block"
-            style="width: 100%; height: 550px; object-fit: cover"
-            alt="Imagen 1"
-          />
-          <div
-            class="carousel-caption d-none d-md-block"
-            style="
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              color: black;
-              padding: 10px;
-            "
-          >
-            <h5>Texto Encima del Carrusel</h5>
-            <p>Descripción o mensaje adicional.</p>
-          </div>
+          <img src="vistas/img/img_carrusel/carrusel01.png" alt="Imagen 1" />
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="vistas/img/img_carrusel/carrusel02.png"
-            class="d-block"
-            style="width: 100%; height: 550px; object-fit: cover"
-            alt="Imagen 2"
-          />
-          <div
-            class="carousel-caption d-none d-md-block"
-            style="
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              color: black;
-              padding: 10px;
-            "
-          >
-            <h5>Texto Encima del Carrusel</h5>
-            <p>Descripción o mensaje adicional.</p>
-          </div>
+          <img src="vistas/img/img_carrusel/carrusel02.png" alt="Imagen 2" />
         </div>
         <div class="carousel-item">
-          <img
-            src="vistas/img/img_carrusel/carrusel03.png"
-            class="d-block"
-            style="width: 100%; height: 550px; object-fit: cover"
-            alt="Imagen 3"
-          />
-          <div
-            class="carousel-caption d-none d-md-block"
-            style="
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              color: black;
-              padding: 10px;
-            "
-          >
-            <h5>Texto Encima del Carrusel</h5>
-            <p>Descripción o mensaje adicional.</p>
-          </div>
+          <img src="vistas/img/img_carrusel/carrusel03.png" alt="Imagen 3" />
         </div>
       </div>
+
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExampleInterval"
+        data-bs-target="#carouselContacto"
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span class="visually-hidden">Anterior</span>
       </button>
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExampleInterval"
+        data-bs-target="#carouselContacto"
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span class="visually-hidden">Siguiente</span>
       </button>
     </div>
 
@@ -350,7 +300,10 @@
             </div>
           </div>
           <h2 class="docente-title">Mg. Jullo Cesar Apaza Cuarite</h2>
-          <p class="docente-description">Subdirector del Nivel Primaria</p>
+          <p class="docente-description">
+            Subdirector del Nivel <br />
+            Primaria
+          </p>
           <p class="docente-info">
             <i class="fa-solid fa-phone" style="color: #f56600"></i> 999999999
           </p>
@@ -401,6 +354,7 @@
           </button>
         </div>
       </div>
+
       <!-- TARJETA 03 -->
       <div class="docente-row">
         <!--  -->
@@ -517,7 +471,10 @@
               <a href=""><i class="docente-icon fab fa-facebook"></i></a>
             </div>
           </div>
-          <h2 class="docente-title">Mg. José Manuel Cáriga Melgarejo</h2>
+          <h2 class="docente-title">
+            Mg. José  Cáriga
+            Melgarejo
+          </h2>
           <p class="docente-description">
             Subirector del Nivel <br />Secundaria P-I
           </p>
@@ -550,8 +507,7 @@
             </div>
           </div>
           <h2 class="docente-title">
-            Dr. Teófanes Huerta <br />
-            Mallqui
+            Dr. Teófanes Huerta Mallqui
           </h2>
           <p class="docente-description">
             Subdirector del Nivel<br />Secundaria P-II
@@ -572,6 +528,28 @@
           </button>
         </div>
       </div>
+    </div>
+    <!-- PERSONAL ADMINISTRATIVO -->
+    <div class="bienvenidos">
+      <h1>Personal Administrativo</h1>
+    </div>
+    <div class="contenedor-botones-administrativo">
+      <button class="boton-administrativo" onclick="('')">
+        <img src="vistas/img/modelo.png" alt="Modelo" />
+        Personal Administrativo
+      </button>
+      <button class="boton-administrativo" onclick="('')">
+        <img src="vistas/img/modelo.png" alt="Modelo" />
+        Docentes Inicial
+      </button>
+      <button class="boton-administrativo" onclick="('')">
+        <img src="vistas/img/modelo.png" alt="Modelo" />
+        Docente Primaria
+      </button>
+      <button class="boton-administrativo" onclick="('')">
+        <img src="vistas/img/modelo.png" alt="Modelo" />
+        Docente Secundaria
+      </button>
     </div>
 
     <!-- SINTA CARRUSEL -->

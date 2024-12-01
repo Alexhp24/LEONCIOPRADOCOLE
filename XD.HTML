@@ -1,136 +1,119 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner text-center">
-    <!-- Primer grupo de tarjetas -->
-    <div class="carousel-item active">
-      <div class="d-flex justify-content-center gap-2">
-        <div class="card" style="width: 16rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card 1</h5>
-            <p class="card-text">Description of Card 1.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 16rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card 2</h5>
-            <p class="card-text">Description of Card 2.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 16rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card 3</h5>
-            <p class="card-text">Description of Card 3.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón con Imagen de Modelo</title>
+    <style>
+        /* Contenedor de los botones */
+        .contenedor-botones-administrativo {
+            display: flex; /* Utiliza flexbox para alinear los botones */
+            justify-content: center; /* Centra los botones en el contenedor */
+            gap: 20px; /* Espacio de 20px entre los botones */
+            flex-wrap: wrap; /* Los botones se envuelven en pantallas pequeñas */
+            padding: 10px; /* Espaciado alrededor de los botones */
+        }
 
-    <!-- Segundo grupo de tarjetas -->
-    <div class="carousel-item">
-      <div class="d-flex justify-content-center gap-2">
-        <div class="card" style="width: 16rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card 4</h5>
-            <p class="card-text">Description of Card 4.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 16rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card 5</h5>
-            <p class="card-text">Description of Card 5.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 16rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card 6</h5>
-            <p class="card-text">Description of Card 6.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
+        /* Estilo de los botones */
+        .boton-administrativo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border: transparent;
+            background-color: transparent; /* Fondo transparente */
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            position: relative;
+            width: 180px; /* Ancho fijo para los botones */
+            height: 100px; /* Altura fija para el botón */
+            transition: transform 0.3s ease; /* Transición suave en el hover */
+        }
 
-    <!-- Tercer grupo de tarjetas -->
-    <div class="carousel-item">
-      <div class="d-flex justify-content-center gap-2">
-        <div class="card" style="width: 16rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card 7</h5>
-            <p class="card-text">Description of Card 7.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 16rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card 8</h5>
-            <p class="card-text">Description of Card 8.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 16rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card 9</h5>
-            <p class="card-text">Description of Card 9.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+        .boton-administrativo::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background-color: #db9601; /* Color del botón */
+            width: 100%;
+            border-radius: 5px;
+            z-index: -1;
+        }
 
-  <!-- Controles del carrusel -->
-  <!-- Controles del carrusel -->
-<button class="carousel-control-prev position-absolute top-50" style="left: 0; transform: translateY(-20%);" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next position-absolute top-50" style="right: 0; transform: translateY(-50%);" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Next</span>
-</button>
+        .boton-administrativo img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-left: -30px; /* Saca la imagen hacia la izquierda */
+            z-index: 1;
+        }
 
-  
-  
+        .boton-administrativo:hover::before {
+            background-color: #0056b3; /* Color al hacer hover */
+            transform: scale(1.1); /* Escala el botón al hacer hover */
+        }
+
+        /* Media queries para dispositivos móviles */
+        @media (max-width: 768px) {
+            .boton-administrativo {
+                width: 150px; /* Reduce el tamaño de los botones en pantallas pequeñas */
+                height: 80px;
+                padding: 8px 10px; /* Reduce el padding */
+            }
+
+            .boton-administrativo img {
+                width: 100px;
+                height: 100px;
+            }
+
+            /* Reduce el espacio entre los botones en móviles */
+            .contenedor-botones-administrativo {
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .boton-administrativo {
+                width: 120px; 
+                height: 70px;
+                padding: 6px 8px;
+            }
+
+            .boton-administrativo img {
+                width: 80px; 
+                height: 80px;
+            }
+
+            .contenedor-botones {
+                gap: 10px; 
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="contenedor-botones-administrativo">
+    <button class="boton-administrativo" onclick="alert('¡Botón 1 clickeado!')">
+        <img src="vistas/img/modelo.png" alt="Modelo">
+        Botón 1
+    </button>
+    <button class="boton-administrativo" onclick="alert('¡Botón 2 clickeado!')">
+        <img src="vistas/img/modelo.png" alt="Modelo">
+        Botón 2
+    </button>
+    <button class="boton-administrativo" onclick="alert('¡Botón 3 clickeado!')">
+        <img src="vistas/img/modelo.png" alt="Modelo">
+        Botón 3
+    </button>
+    <button class="boton-administrativo" onclick="alert('¡Botón 4 clickeado!')">
+        <img src="vistas/img/modelo.png" alt="Modelo">
+        Botón 4
+    </button>
 </div>
 
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-.carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    width: 30px; /* Ajusta el tamaño */
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
-    border-radius: 50%; /* Botones redondeados */
-  }
-
-  // Evita que el carrusel haga scroll en la página
-  document.querySelectorAll('.carousel-control-prev, .carousel-control-next').forEach(button => {
-    button.addEventListener('click', function (e) {
-      e.preventDefault(); // Prevenir comportamiento predeterminado
-    });
-  });
-
-  // Asegura que el carrusel no genere scroll adicional al cambiar de slide
-  const carousel = document.querySelector('#cardCarousel');
-  carousel.addEventListener('slide.bs.carousel', function (event) {
-    window.scrollTo({ top: carousel.offsetTop, behavior: 'smooth' });
-  });
-
+</body>
+</html>
