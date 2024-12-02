@@ -185,7 +185,26 @@ body {
   color: white;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  #carouselContacto .carousel-title {
+    font-size: 2.5rem; /* Ajusta según necesidad */
+  }
 
+  #carouselContacto .carousel-description {
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  #carouselContacto .carousel-title {
+    font-size: 2rem; 
+  }
+
+  #carouselContacto .carousel-description {
+    font-size: 0.9rem; 
+  }
+}
 
 /* FIN */
 
@@ -210,7 +229,29 @@ body {
   font-size: 25px;
   font-weight: bold;
 }
+/* Estilos para pantallas medianas */
+@media (max-width: 768px) {
+  .bienvenidos h1 {
+    font-size: 35px; /* Reduce el tamaño del h1 */
+  }
 
+  .bienvenidos p {
+    font-size: 20px; 
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 480px) {
+  .bienvenidos h1 {
+    font-size: 28px; 
+    margin-top: 15px; 
+  }
+
+  .bienvenidos p {
+    font-size: 18px; 
+  }
+}
+/* FIN */
 /* CARD Valores  */
 .card {
   width: 300px;
