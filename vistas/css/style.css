@@ -391,6 +391,36 @@ body {
   margin: 5px;
 }
 
+/* ACTIVIDADES DE CADA NIVELES */
+.card-actividades {
+  border-radius: 8px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  width: 100%;
+  height: 430px;
+}
+
+.card-img-top-actividades {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-title-actividades {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #004071;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-text-actividades {
+  color: #555;
+  margin: 5px;
+}
+
+/* FIN */
+
 /* sinta de logos  */
 .logo-carousel-new {
   display: flex;
@@ -833,29 +863,29 @@ body {
 /* CONTACTO HTML */
 .registro-contacto {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
-  flex-wrap: nowrap; 
+  flex-wrap: nowrap;
 }
 
-.registro-contacto .informacion{
+.registro-contacto .informacion {
   height: 400px;
   background-color: #ffffff;
   padding: 20px;
   margin: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 30%; 
+  width: 30%;
 }
-.registro-contacto .formulario{
+.registro-contacto .formulario {
   height: 400px;
   background-color: #ffffff;
   padding: 20px;
   margin: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 30%; 
+  width: 30%;
 }
 .registro-contacto .mapa {
   background-color: #ffffff;
@@ -864,7 +894,7 @@ body {
   height: 400px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 30%; 
+  width: 30%;
 }
 
 .registro-contacto h3 {
@@ -926,15 +956,71 @@ body {
 /* Media query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
   .registro-contacto {
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
   }
   .registro-contacto .informacion,
   .registro-contacto .formulario,
   .registro-contacto .mapa {
-    width: 100%; 
+    width: 100%;
   }
 
   .registro-contacto {
-    align-items: center; 
+    align-items: center;
+  }
+}
+
+/* SERVICIO */
+/* Clase personalizada para el fondo azul en los encabezados */
+.thead-blue th {
+  background-color: #004071; 
+  color: rgb(255, 255, 255); 
+}
+
+/* FIN */
+/* BOTON INTERACTIVO PARA GALERIA */
+ .contenedor-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-galeria {
+  background-color: #004071;
+  color: white;
+  border: none;
+  padding: 20px 60px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.button-galeria:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.chispa {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: gold;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: chispa-animation 0.8s linear;
+}
+
+/* Animación de las chispas */
+@keyframes chispa-animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--x, 0px), var(--y, 0px)) scale(0.3);
+    opacity: 0;
   }
 }

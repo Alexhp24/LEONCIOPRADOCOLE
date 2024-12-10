@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>LPG</title>
+    <title>SERVICIOS||l</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -27,6 +27,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="vistas/css/style.css" />
+
+    <!-- DataTables CSS -->
+    <link
+      href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -198,8 +204,59 @@
 
     <!-- BIENVENIDO -->
     <div class="bienvenidos">
-      <h1>BIENVENIDOS</h1>
-      <p>😗😘🥺 ESTAMOS TRABAJANDO GRACIAS 😗😘🥺</p>
+      <h1>Revise e ingrese al tramite que requiera</h1>
+    </div>
+    <!-- TRAMITES -->
+    <div class="container mt-5">
+      <table id="tablaInteractiva" class="table table-striped table-hover">
+        <thead class="thead-blue">
+          <tr>
+            <th>ID</th>
+            <th>Tramite</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Ratificación Matricula de Inicial</td>
+
+            <td class="text-center">
+              <button
+                onclick="window.open('https://forms.gle/rBsMVhmrg3MY5NQc6', '_blank')"
+                class="btn btn-warning"
+              >
+                Ver tramite
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Ratificación Matricula de Primaria</td>
+            <td class="text-center">
+              <button
+                onclick="window.open('https://forms.gle/KuVPMuRXRGNFzDgK7', '_blank')"
+                class="btn btn-warning"
+              >
+                Ver tramite
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Ratificación Matricula de Secundaria</td>
+            <td class="text-center">
+              <button
+                onclick="window.open('https://forms.gle/iYeYW8JPgtCaGgby7', '_blank')"
+                class="btn btn-warning"
+              >
+                Ver tramite
+              </button>
+            </td>
+          </tr>
+          <!-- Más filas de ejemplo -->
+        </tbody>
+      </table>
     </div>
 
     <!-- SINTA CARRUSEL -->
@@ -416,5 +473,20 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#tablaInteractiva").DataTable({
+          language: {
+            url: "//cdn.datatables.net/plug-ins/1.13.6/i18n/es-ES.json",
+          },
+        });
+      });
+    </script>
   </body>
 </html>
