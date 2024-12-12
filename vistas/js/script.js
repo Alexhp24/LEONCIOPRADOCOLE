@@ -40,12 +40,12 @@ function generarChispas(event) {
 }
 
 // Función para redireccionar a galeria.html después del clic
-function redireccionar(event) {
+function redireccionar(event, pagina) {
   // Generar chispas
   generarChispas(event);
 
   // Redireccionar después de un breve tiempo (esperar por el efecto)
   setTimeout(() => {
-    window.location.href = "galeria.html"; // Redirigir al archivo local galeria.html
+    window.location.href = pagina; // Redirige a la página especificada
   }, 800); // Tiempo suficiente para ver el efecto
 }

@@ -1005,22 +1005,152 @@ body {
 
 .chispa {
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: gold;
+  background-color: #ffcc00; /* Color de las chispas */
   border-radius: 50%;
   pointer-events: none;
-  animation: chispa-animation 0.8s linear;
+  animation: chispa-animation 0.8s ease-out forwards;
 }
 
-/* Animación de las chispas */
 @keyframes chispa-animation {
   0% {
-    transform: scale(1);
+    transform: translate(0, 0) scale(1);
     opacity: 1;
   }
   100% {
-    transform: translate(var(--x, 0px), var(--y, 0px)) scale(0.3);
+    transform: translate(var(--x), var(--y)) scale(0.5);
     opacity: 0;
   }
 }
+
+/* FINNNNNNNN */
+
+
+/* COLLAGE CON NIVELES */
+.collage-collage {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Centrado de collage-niveles */
+.collage-niveles {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 150px;
+  gap: 10px;
+  padding: 10px;
+  max-width: 90%;
+  background-color: #eeebeb;
+  border-radius: 10px;
+}
+
+.collage-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.collage-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.item2 {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.item3 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.item4 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.item5 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.item6 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.item7 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.collage-niveles h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .collage-niveles {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 95%;
+  }
+
+  .item1 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6,
+  .item7 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .collage-niveles {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+  }
+
+  .item1 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6,
+  .item7 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+}
+
+/* FIN */
