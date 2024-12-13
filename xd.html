@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botón Flotante de Audio</title>
+    <style>
+      .audio-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #ffa500;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        z-index: 1000;
+      }
+
+      .audio-button:hover {
+        background-color: #ff8c00;
+      }
+
+      .audio-button i {
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Botón Flotante -->
+    <button class="audio-button" onclick="toggleAudio()" title="himno">
+      <i>&#9658;</i>
+      <!-- Icono de reproducción -->
+    </button>
+    <audio id="audio" title="HIMNO LPG" src="vistas/audio/himno.mp3"></audio>
+
+    <script>
+      const audio = document.getElementById("audio");
+      const button = document.querySelector(".audio-button i");
+
+      function toggleAudio() {
+        if (audio.paused) {
+          audio.play();
+          button.innerHTML = "&#10074;&#10074;"; // Icono de pausa
+        } else {
+          audio.pause();
+          button.innerHTML = "&#9658;"; // Icono de reproducción
+        }
+      }
+    </script>
+  </body>
+</html>

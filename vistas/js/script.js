@@ -1,10 +1,4 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//   var myCarousel = document.querySelector('#carouselExample');
-//   var carousel = new bootstrap.Carousel(myCarousel, {
-//     interval: 4000 // Tiempo en milisegundos (4 segundos)
-//   });
-// });
-// Función para generar las chispas
+// FUNCION DE BOTON CHISPAS DE NIVELES
 function generarChispas(event) {
   const boton = event.currentTarget;
   const rect = boton.getBoundingClientRect();
@@ -48,4 +42,32 @@ function redireccionar(event, pagina) {
   setTimeout(() => {
     window.location.href = pagina; // Redirige a la página especificada
   }, 800); // Tiempo suficiente para ver el efecto
+}
+
+// FUNCION DE TEXTO DE HISTORIA
+function mostrarTexto() {
+  var historiaTexto = document.getElementById("historia-texto");
+  var boton = document.querySelector(".leer-mas-btn");
+
+  if (historiaTexto.style.display === "none") {
+    historiaTexto.style.display = "block";
+    boton.textContent = "Leer menos"; // Cambia el texto del botón
+  } else {
+    historiaTexto.style.display = "none";
+    boton.textContent = "Leer más"; // Cambia el texto del botón nuevamente
+  }
+}
+
+// AUDIO DE HIMNO
+const audio = document.getElementById("audio");
+const button = document.querySelector(".audio-button i");
+
+function toggleAudio() {
+  if (audio.paused) {
+    audio.play();
+    button.innerHTML = "&#10074;&#10074;"; // Icono de pausa
+  } else {
+    audio.pause();
+    button.innerHTML = "&#9658;"; // Icono de reproducción
+  }
 }
