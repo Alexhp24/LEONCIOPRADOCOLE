@@ -1217,31 +1217,31 @@ body {
 @media (max-width: 768px) {
   .historialp {
     margin: 15px;
-    flex-direction: column; /* Apila la imagen y el texto verticalmente */
-    text-align: center; /* Centra el texto cuando se apilan */
+    flex-direction: column; 
+    text-align: center; 
   }
 
   .historialp-img {
-    width: 170px; /* Ajusta el tamaño de la imagen en móvil */
+    width: 170px; 
     height: 200px;
-    margin-bottom: 20px; /* Agrega un espacio debajo de la imagen */
+    margin-bottom: 20px; 
   }
 
   .historialp-info h2 {
     text-align: center;
-    font-size: 20px; /* Ajusta el tamaño del título en móvil */
+    font-size: 20px; 
   }
 
   .historialp-info h3 {
-    font-size: 16px; /* Ajusta el tamaño del nombre en móvil */
+    font-size: 16px; 
   }
 
   .historialp-info p {
-    font-size: 14px; /* Ajusta el tamaño del párrafo en móvil */
+    font-size: 14px; 
   }
 
   .leer-mas-btn {
-    font-size: 14px; /* Ajusta el tamaño del botón en móvil */
+    font-size: 14px; 
   }
 }
 
@@ -1250,7 +1250,6 @@ body {
 .nushimno {
   display: flex;
   flex-direction: row;
-  margin: 15px;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -1258,6 +1257,7 @@ body {
 
 .nushimno-img {
   width: 400px;
+  margin: 10px;
   height: 530px;
   border-radius: 10px;
 }
